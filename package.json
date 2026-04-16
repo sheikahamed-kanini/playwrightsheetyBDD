@@ -1,0 +1,22 @@
+{
+  "name": "testrahulsheety",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run bddgen && playwright test",
+    "test:headed": "npm run bddgen && playwright test --headed",
+    "test:debug": "npm run bddgen && playwright test --debug",
+    "bddgen": "bddgen",
+    "bddgen:watch": "bddgen --watch",
+    "report": "playwright show-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "Playwright BDD Test Automation with Page Object Model",
+  "devDependencies": {
+    "@playwright/test": "^1.59.1",
+    "@types/node": "^25.6.0",
+    "playwright-bdd": "^8.5.0"
+  }
+}

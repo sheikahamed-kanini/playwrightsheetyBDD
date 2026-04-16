@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "commonjs",
+    "lib": ["ESNext", "DOM"],
+    "types": ["node", "@playwright/test"],
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "paths": {
+      "@pages/*": ["pages/*"],
+      "@fixtures/*": ["fixtures/*"],
+      "@steps/*": ["steps/*"]
+    }
+  },
+  "include": ["features/**/*.ts", "pages/**/*.ts", "fixtures/**/*.ts", "steps/**/*.ts", "tests/**/*.ts"],
+  "exclude": ["node_modules", "dist", ".bddgen"]
+}
