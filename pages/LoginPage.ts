@@ -3,20 +3,20 @@ import { Page, expect } from '@playwright/test';
 export class LoginPage {
   constructor(private page: Page) {}
 
-  async navigateToLoginPage(url: string = 'https://rahulshettyacademy.com/loginpagePractise/') {
+  async navigateToLoginPage(url: string = 'https://rahulshettyacademy.com/client/#/auth/login') {
     await this.page.goto(url);
   }
 
   async enterUsername(username: string) {
-    await this.page.getByRole('textbox', { name: 'Username' }).fill(username);
+    await this.page.getByRole('textbox', { name: 'email@example.com' }).fill(username);
   }
 
   async enterPassword(password: string) {
-    await this.page.getByRole('textbox', { name: 'Password' }).fill(password);
+    await this.page.getByRole('textbox', { name: 'enter your passsword' }).fill(password);
   }
 
   async clickLoginButton() {
-    await this.page.getByRole('button', { name: 'Sign In' }).click();
+    await this.page.getByRole('button', { name: 'Login' }).click();
   }
 
   async login(username: string, password: string) {

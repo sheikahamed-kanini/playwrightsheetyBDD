@@ -10,7 +10,7 @@ Given('user is on the Login page', async ({ loginPage }) => {
 });
 
 When('User enters Valid username and Password', async ({ loginPage }) => {
-  await loginPage.login('rahulshettyacademy', 'Learning@830$3mK2');
+  await loginPage.login('sheikahamed86@gmail.com', 'ALjabbar246$');
 });
 
 Then('User should be redirected to the homepage', async ({ loginPage, page }) => {
@@ -31,7 +31,7 @@ Then('user should see an error message', async ({ loginPage, page }) => {
 
 When('user leaves the username and enter the password', async ({ loginPage }) => {
   // Leave username empty and enter password only
-  await loginPage.enterPassword('Learning@830$3mK2');
+  await loginPage.enterPassword('ALjabbar246$');
   await loginPage.clickLoginButton();
 });
 
@@ -42,7 +42,7 @@ Then('User should see the error message as Username required', async ({ loginPag
 
 When('user entersc the username and leaves password', async ({ loginPage }) => {
   // Enter username but leave password empty
-  await loginPage.enterUsername('rahulshettyacademy');
+  await loginPage.enterUsername('sheikahamed86@gmail.com');
   await loginPage.clickLoginButton();
 });
 
